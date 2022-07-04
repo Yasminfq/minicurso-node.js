@@ -37,6 +37,6 @@ app.get("/usuarios", async(request, response) => {
 });
 
 //iniciar o servidor
-app.listen(3030, ()=> {
+app.listen(process.env.PORT || 3030, ()=> {
     console.log("Servidor rodando!");
 });
